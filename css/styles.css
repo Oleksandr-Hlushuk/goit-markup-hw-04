@@ -330,7 +330,6 @@ img {
 .team-info-list {
   display: flex;
   justify-content: center;
-  justify-content: space-between;
   padding-left: 16px;
   padding-right: 16px;
   gap: 24px;
@@ -347,9 +346,10 @@ img {
   padding: 12px;
   justify-content: center;
   align-items: center;
-  transition: background-color, 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.team-info-link:focus,
 .team-info-link:hover {
   background-color: var(--ocean);
 }
@@ -379,6 +379,12 @@ img {
   flex-basis: calc((100% - 72px) / 3);
   overflow: hidden;
   position: relative;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-list-item:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .overlay {
@@ -392,7 +398,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--cloud);
   background-color: var(--iris);
-  transform: translateX(100%);
+  transform: translateY(100%);
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -400,7 +406,7 @@ img {
 }
 
 .portfolio-list-item:hover .overlay {
-  transform: translateX(0);
+  transform: translateY(0);
 }
 
 .portfolio-text-container {
