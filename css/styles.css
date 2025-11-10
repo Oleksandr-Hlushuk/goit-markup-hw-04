@@ -117,7 +117,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--navy-blue);
   padding: 24px 0;
-  transition-property: background-color;
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -153,7 +153,7 @@ img {
 .address-link {
   line-height: 1.5;
   letter-spacing: 0.02em;
-  transition-property: background-color;
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -363,6 +363,30 @@ img {
 
 .portfolio-list-item {
   flex-basis: calc((100% - 72px) / 3);
+  overflow: hidden;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 360px;
+  font-family: var(--main-family);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--cloud);
+  background-color: var(--iris);
+  transform: translateX(100%);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 40px 32px 164px;
+}
+
+.portfolio-list-item:hover .overlay {
+  transform: translateX(0);
 }
 
 .portfolio-text-container {
