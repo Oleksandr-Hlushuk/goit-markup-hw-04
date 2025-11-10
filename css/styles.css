@@ -168,6 +168,7 @@ img {
 }
 
 .hero-section {
+  margin: 0 auto;
   background-color: var(--navy-blue);
   background-image: linear-gradient(to bottom, var(--grey), var(--grey)),
     url('../images/background/hero-people-office.jpg');
@@ -176,6 +177,7 @@ img {
   background-size: cover;
   text-align: center;
   padding: 188px 0;
+  max-width: 1440px;
 }
 
 .hero-title {
@@ -243,6 +245,8 @@ img {
   margin-bottom: 8px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 112px;
 }
 
 .benefits-title {
@@ -318,32 +322,35 @@ img {
 
 .team-info-list {
   display: flex;
+  justify-content: center;
   justify-content: space-between;
   padding-left: 16px;
   padding-right: 16px;
+  gap: 24px;
 }
 
 .team-info-link:not(:last-child) {
   gap: calc((100% - 160px) / 4);
 }
 
-.team-info-item {
+.team-info-link {
   background-color: var(--iris);
   border-radius: 50%;
+  display: flex;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-info-item:hover {
+.team-info-link:hover {
   background-color: var(--ocean);
 }
 
-.team-info-link {
-  display: flex;
-  padding: 12px;
-  justify-content: center;
-  align-items: center;
+.team-info-icon {
+  fill: var(--cloud);
 }
 
 .portfolio-main-title {
