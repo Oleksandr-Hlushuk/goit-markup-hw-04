@@ -464,6 +464,9 @@ img {
 
 .footer-container {
   display: flex;
+}
+
+.footer-logo-container {
   margin-right: 120px;
   align-items: baseline;
 }
@@ -504,4 +507,8 @@ img {
 .footer-info-link:hover,
 .footer-info-link:focus {
   background-color: var(--green);
+}
+
+.footer-info-icon {
+  fill: var(--cloud);
 }
