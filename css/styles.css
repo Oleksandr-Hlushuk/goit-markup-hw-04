@@ -153,7 +153,6 @@ img {
   background-color: var(--navy-blue);
   background-image: linear-gradient(to bottom, var(--grey), var(--grey)),
     url('../images/background/hero-people-office.jpg');
-  background-origin: border-box;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
