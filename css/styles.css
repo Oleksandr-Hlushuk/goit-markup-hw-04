@@ -119,9 +119,19 @@ img {
   padding: 24px 0;
 }
 
+.nav-link:active,
 .nav-link:focus,
 .nav-link:hover {
   color: var(--ocean);
+}
+
+.nav-list-item:active::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--ocean);
+  border-radius: 2px;
 }
 
 .page-address {
