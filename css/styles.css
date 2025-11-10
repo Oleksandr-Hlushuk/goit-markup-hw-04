@@ -297,7 +297,6 @@ img {
 
 .team-info-list {
   display: flex;
-  justify-content: center;
   justify-content: space-between;
   padding-left: 16px;
   padding-right: 16px;
@@ -321,9 +320,6 @@ img {
   padding: 12px;
   justify-content: center;
   align-items: center;
-}
-
-.team-info-icon {
 }
 
 .portfolio-main-title {
@@ -398,4 +394,48 @@ img {
 
 .half-logo-footer {
   color: var(--cloud);
+}
+
+.footer-container {
+  display: flex;
+  gap: 120px;
+}
+
+.footer-social-media {
+  display: inline-block;
+}
+
+.footer-social-title {
+  font-family: var(--main-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+.footer-info-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-info-item {
+  background-color: var(--iris);
+  border-radius: 50%;
+}
+
+.footer-info-item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.footer-info-item:hover {
+  background-color: var(--ocean);
+}
+
+.footer-info-link {
+  display: flex;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
 }
