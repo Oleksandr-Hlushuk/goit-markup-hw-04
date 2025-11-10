@@ -406,7 +406,7 @@ img {
 }
 
 .portfolio-list-item:hover .overlay {
-  transform: translateY(0);
+  transform: translateY(0%);
 }
 
 .portfolio-text-container {
