@@ -117,6 +117,9 @@ img {
   letter-spacing: 0.02em;
   color: var(--navy-blue);
   padding: 24px 0;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:active,
@@ -150,6 +153,9 @@ img {
 .address-link {
   line-height: 1.5;
   letter-spacing: 0.02em;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-link:focus,
@@ -197,6 +203,9 @@ img {
   border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   margin: 0 auto;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -319,6 +328,9 @@ img {
 .team-info-item {
   background-color: var(--iris);
   border-radius: 50%;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-info-item:hover {
@@ -433,6 +445,9 @@ img {
 .footer-info-item {
   background-color: var(--iris);
   border-radius: 50%;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-info-item:not(:last-child) {
@@ -440,7 +455,7 @@ img {
 }
 
 .footer-info-item:hover {
-  background-color: var(--ocean);
+  background-color: var(--green);
 }
 
 .footer-info-link {
