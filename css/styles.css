@@ -213,6 +213,17 @@ img {
   display: flex;
 }
 
+.benefits-icon {
+  border: 1px solid var(--light-slate);
+  border-radius: 4px;
+  background-color: var(--cloud);
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: center;
+}
+
 .benefits-title {
   font-weight: 500;
   font-size: 20px;
