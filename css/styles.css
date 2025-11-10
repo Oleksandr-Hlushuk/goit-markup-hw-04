@@ -213,7 +213,7 @@ img {
   display: flex;
 }
 
-.benefits-icon {
+.benefits-icon-container {
   border: 1px solid var(--light-slate);
   border-radius: 4px;
   background-color: var(--cloud);
@@ -276,7 +276,7 @@ img {
   text-align: center;
 }
 
-.team-text {
+.team-info {
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -292,6 +292,38 @@ img {
 
 .team-name-position {
   line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.team-info-list {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.team-info-link:not(:last-child) {
+  gap: calc((100% - 160px) / 4);
+}
+
+.team-info-item {
+  background-color: var(--iris);
+  border-radius: 50%;
+}
+
+.team-info-item:hover {
+  background-color: var(--ocean);
+}
+
+.team-info-link {
+  display: flex;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-info-icon {
 }
 
 .portfolio-main-title {
